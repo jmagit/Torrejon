@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="panel" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PrincipalController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onClose" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onLimpia" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <Accordion styleClass="BarraLateral" BorderPane.alignment="CENTER">
+        <panes>
+          <TitledPane animated="false" expanded="false" styleClass="BarraLateral" text="Ventanas">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="BarraLateral">
+                     <children>
+                        <Hyperlink maxWidth="1.7976931348623157E308" onAction="#onOpenNoModalSinPadre" text="No Modal sin padre">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../resources/comida48x48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Hyperlink>
+                        <Hyperlink maxWidth="1.7976931348623157E308" onAction="#onOpenNoModalConPadre" text="No Modal con padre">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../resources/descanso48x48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Hyperlink>
+                        <Hyperlink maxWidth="1.7976931348623157E308" onAction="#openDialog" text="C. Dialogo">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../resources/1475_Text%20Balloon_48x48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Hyperlink>
+                        <Hyperlink onAction="#onCambiaScene" text="Escenario" />
+                     </children>
+                  </VBox>
+               </content>
+          </TitledPane>
+          <TitledPane animated="false" expanded="false" text="Controles">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Hyperlink onAction="#onPintaGrafica" text="Graficas" />
+                        <Hyperlink onAction="#onNavega" text="Navegador" />
+                        <Hyperlink onAction="#onListado" text="Listado" />
+                        <Hyperlink onAction="#onVerVideo" text="Video" />
+                        <Hyperlink onAction="#onGoogle" text="Google" />
+                        <Hyperlink onAction="#onOracle" text="Oracle" />
+                        <Label fx:id="lbMensaje" text="Mensajes" />
+                        <Hyperlink onAction="#onHilo" text="Hilo" />
+                        <ProgressBar fx:id="bar" prefWidth="200.0" progress="0.0" />
+                        <ProgressIndicator progress="0.0" />
+                     </children>
+                  </VBox>
+               </content>
+          </TitledPane>
+          <TitledPane animated="false" text="Varios">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" styleClass="BarraLateral">
+                     <children>
+                        <Button graphicTextGap="10.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onDemos" text="Demos">
+                           <graphic>
+                              <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../resources/go-previous-7.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPaneles" text="Paneles" />
+                        <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onCalculadora" text="Calculadora">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../resources/Calculator.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+						<Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onEditor" text="Editor" />
+                     </children>
+                  </VBox>
+               </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </left>
+</BorderPane>

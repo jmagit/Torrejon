@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="270.0" prefWidth="441.0" rotate="-45.0" scaleX="0.5" translateX="-100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmpleadosFormModelView">
+   <children>
+      <FlowPane layoutX="14.0" layoutY="14.0" prefHeight="254.0" prefWidth="572.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <HBox spacing="5.0">
+               <children>
+                  <Label text="Código" />
+                  <TextField fx:id="txtIdEmpleado" prefWidth="80.0" />
+               </children>
+               <FlowPane.margin>
+                  <Insets left="5.0" top="5.0" />
+               </FlowPane.margin>
+            </HBox>
+            <HBox spacing="5.0">
+               <children>
+                  <Label text="Nombre" />
+                  <TextField fx:id="txtNombre" />
+               </children>
+               <FlowPane.margin>
+                  <Insets left="5.0" top="5.0" />
+               </FlowPane.margin>
+            </HBox>
+            <HBox spacing="5.0">
+               <children>
+                  <Label text="Apellidos" />
+                  <TextField fx:id="txtApellidos" prefWidth="250.0" />
+               </children>
+               <FlowPane.margin>
+                  <Insets left="5.0" top="5.0" />
+               </FlowPane.margin>
+            </HBox>
+            <HBox spacing="5.0">
+               <children>
+                  <Label text="Delegación" />
+                  <ComboBox fx:id="txtDelegacion" prefWidth="150.0" />
+               </children>
+               <FlowPane.margin>
+                  <Insets left="5.0" top="5.0" />
+               </FlowPane.margin>
+            </HBox>
+            <CheckBox fx:id="chkConflictivo" mnemonicParsing="false" text="Es conflictivo">
+               <FlowPane.margin>
+                  <Insets left="5.0" top="5.0" />
+               </FlowPane.margin>
+            </CheckBox>
+         </children>
+      </FlowPane>
+      <Button fx:id="btnAcept" layoutX="468.0" layoutY="337.0" mnemonicParsing="false" text="Aceptar" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="73.0" />
+      <Button fx:id="btnCancel" layoutX="525.0" layoutY="321.0" mnemonicParsing="false" text="Cancelar" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+   </children>
+   <rotationAxis>
+      <Point3D x="10.0" y="10.0" z="1.0" />
+   </rotationAxis>
+</AnchorPane>

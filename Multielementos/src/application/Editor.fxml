@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.EditorController">
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#onNuevo"
+							text="New" />
+						<MenuItem mnemonicParsing="false" onAction="#onAbrir"
+							text="Open ..." />
+						<MenuItem mnemonicParsing="false" onAction="#onGuardar"
+							text="Save" />
+						<MenuItem mnemonicParsing="false"
+							onAction="#onGuardarComo" text="Save as ..." />
+						<SeparatorMenuItem mnemonicParsing="false" />
+						<MenuItem mnemonicParsing="false" onAction="#onSalir"
+							text="Close" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem fx:id="mnuVer" mnemonicParsing="false"
+							text="Ver" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem mnemonicParsing="false" text="About" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+	<center>
+		<SplitPane dividerPositions="0.7617370892018779"
+			maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+			<items>
+				<HTMLEditor fx:id="editor"
+					htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;"
+					maxHeight="1.7976931348623157E308"
+					maxWidth="1.7976931348623157E308" />
+				<GridPane>
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES"
+							minWidth="10.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="0" vgrow="SOMETIMES" />
+						<RowConstraints minHeight="0" prefHeight="30.0"
+							vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<WebView fx:id="browser" prefHeight="200.0"
+							prefWidth="200.0" />
+						<TextFlow maxHeight="1.7976931348623157E308"
+							maxWidth="1.7976931348623157E308" textAlignment="JUSTIFY"
+							GridPane.rowIndex="1">
+							<children>
+								<Text strokeType="OUTSIDE" strokeWidth="0.0"
+									text="Versión texto: ">
+									<font>
+										<Font name="Arial Bold" size="14.0" />
+									</font>
+								</Text>
+								<Text fx:id="txtBrowser" strokeType="OUTSIDE"
+									strokeWidth="0.0">
+									<font>
+										<Font name="System Italic" size="12.0" />
+									</font>
+								</Text>
+							</children>
+						</TextFlow>
+					</children>
+				</GridPane>
+			</items>
+		</SplitPane>
+	</center>
+</BorderPane>

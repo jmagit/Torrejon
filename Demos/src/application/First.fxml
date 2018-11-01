@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="346.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstController">
+   <top>
+      <Pane prefHeight="113.0" prefWidth="539.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblResult" layoutX="252.0" layoutY="57.0" text="Say hello" />
+            <Button fx:id="btnCommand" layoutX="392.0" layoutY="60.0" mnemonicParsing="false" onAction="#saluda" text="Button" />
+            <Button fx:id="btnSaluda" layoutX="463.0" layoutY="60.0" mnemonicParsing="false" onMouseClicked="#cambia" text="Cambia" />
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <TextField fx:id="txtName" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

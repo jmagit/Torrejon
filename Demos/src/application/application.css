@@ -1,0 +1,10 @@
+.root { rojo: #f00 }
+.aviso { -fx-background-color: rojo }
+Button { 
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+} 
+#btnSaluda {
+	-fx-text-fill: yellow;
+	-fx-font-size: 2em;
+}

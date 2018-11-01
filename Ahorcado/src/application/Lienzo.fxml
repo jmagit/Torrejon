@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.canvas.*?>
+
+<BorderPane prefHeight="390.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LienzoController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onInit" text="Reinicia" />
+            <Button fx:id="btnAcierta" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAcierta" text="Acierta" />
+            <Button fx:id="btnFalla" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onFalla" text="Falla" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="capa1" height="2000.0" width="2000.0" />
+            <Canvas fx:id="capa2" height="2000.0" width="2000.0" />
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

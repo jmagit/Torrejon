@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.EmpleadosLstModelView">
+   <top>
+      <Label text="Mantenimiento de Personas" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <ListView fx:id="lbListado" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="80.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnAdd" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Añadir" />
+            <Button fx:id="btnModify" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Modificar" />
+            <Button fx:id="btnRemove" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Borrar" />
+         </children>
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>

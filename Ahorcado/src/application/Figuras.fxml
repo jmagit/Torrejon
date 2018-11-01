@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="390.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FigurasController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onInit" text="Reinicia">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="btnAcierta" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAcierta" scaleX="0.1" scaleY="0.1" text="Acierta" />
+            <Button fx:id="btnFalla" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onFalla" text="Falla" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="root" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="30.0" layoutX="100.0" layoutY="340.0" startX="-30.0" strokeWidth="3.0" />
+            <Line endY="300.0" layoutX="100.0" layoutY="40.0" strokeWidth="3.0" />
+            <Line endX="150.0" layoutX="100.0" layoutY="40.0" strokeWidth="3.0" />
+            <Line endY="50.0" layoutX="100.0" layoutY="40.0" startX="50.0" strokeWidth="3.0" />
+            <Line endY="50.0" layoutX="250.0" layoutY="40.0" strokeWidth="3.0" />
+            <Circle fx:id="cabeza" layoutX="250.0" layoutY="99.0" onMouseClicked="#onParteClick" radius="20.0" stroke="#fc0000" strokeType="INSIDE">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff541f" />
+                        <Stop color="#fffc47" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Circle>
+            <Line fx:id="tronco" endY="100.0" layoutX="250.0" layoutY="120.0" onMouseClicked="#onParteClick" stroke="#f80505" strokeWidth="2.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Line>
+            <Line fx:id="brazoIzq" layoutX="250.0" layoutY="132.0" onMouseClicked="#onParteClick" startX="-30.0" startY="65.0" stroke="#f80505" strokeWidth="2.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Line>
+            <Line fx:id="brazoDer" endX="30.0" endY="65.0" layoutX="250.0" layoutY="132.0" onMouseClicked="#onParteClick" stroke="#f80505" strokeWidth="2.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Line>
+            <Line fx:id="piernaIzq" layoutX="250.0" layoutY="221.0" onMouseClicked="#onParteClick" startX="-40.0" startY="75.0" stroke="#f80505" strokeWidth="2.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Line>
+            <Line fx:id="piernaDer" endX="40.0" endY="75.0" layoutX="250.0" layoutY="221.0" onMouseClicked="#onParteClick" stroke="#f80505" strokeWidth="2.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Line>
+         </children>
+         <effect>
+            <Reflection />
+         </effect>
+      </AnchorPane>
+   </center>
+</BorderPane>

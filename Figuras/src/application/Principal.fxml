@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="458.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PrincipalController">
+   <left>
+      <Pane prefHeight="458.0" prefWidth="173.0" BorderPane.alignment="CENTER">
+         <children>
+            <ColorPicker fx:id="cb" layoutX="14.0" layoutY="14.0" />
+            <Button layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#onCamiseta" text="Camiseta" />
+            <Button layoutX="14.0" layoutY="97.0" mnemonicParsing="false" onAction="#onKK" text="Button" />
+            <WebView fx:id="navegador" layoutX="-6.0" layoutY="285.0" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <ScrollPane prefViewportHeight="458.0" prefViewportWidth="507.0">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Path fx:id="path" fill="DODGERBLUE" layoutX="285.0" layoutY="140.0" stroke="BLACK" strokeType="INSIDE">
+                      <elements>
+                      </elements>
+                  </Path>
+                  <Arc fx:id="cabeza" fill="#f6ff1f" layoutX="183.0" layoutY="89.0" length="270.0" onMouseClicked="#onClickCabeza" onTouchPressed="#onClickCabeza" radiusX="88.0" radiusY="60.0" startAngle="45.0" stroke="#a8a500" strokeType="INSIDE" type="ROUND" />
+                  <Line endY="200.0" layoutX="170.0" layoutY="152.0" strokeWidth="5.0" />
+                  <Line endX="100.0" layoutX="170.0" layoutY="207.0" startX="-100.0" />
+                  <Circle fill="DODGERBLUE" layoutX="54.0" layoutY="208.0" onMouseClicked="#onClickMano" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="283.0" layoutY="207.0" onMouseClicked="#onClickMano" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Polygon fill="DODGERBLUE" layoutX="168.0" layoutY="375.0" stroke="BLACK" strokeType="INSIDE">
+                    <points>
+                      <Double fx:value="-50.0" />
+                      <Double fx:value="40.0" />
+                      <Double fx:value="50.0" />
+                      <Double fx:value="40.0" />
+                      <Double fx:value="0.0" />
+                      <Double fx:value="-60.0" />
+                    </points>
+                  </Polygon>
+                  <Text fx:id="cotilla" layoutX="300.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleción" wrappingWidth="186.546875">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+                  <SVGPath fx:id="svg" content="M70,50 L90,50 L120,90 L150,50 L170,50 L210,90 L180,120 L170,110 L170,200 L70,200 L70,110 L60,120 L30,90 L70,50" fill="#f25353" layoutX="50.0" layoutY="106.0" />
+                  <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="324.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,24 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.Pantalla {
+	-fx-text-fill: yellow;
+	-fx-background-color: darkgreen;
+	-fx-font-size: 32px;
+	-fx-alignment: center-right;
+	/* -fx-content-display: center; */
+	/* -fx-text-alignment: right; */
+	-fx-label-padding: 3px;
+}
+
+.btnDigito {
+	-fx-text-fill: blue;
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+}
+
+.btnOperacion {
+	-fx-text-fill: red;
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+}
+

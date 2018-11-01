@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="374.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PrincipalController">
+   <left>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ColorPicker fx:id="cbColor" layoutX="14.0" layoutY="21.0" />
+            <CheckBox fx:id="ckCapa1" layoutX="14.0" layoutY="63.0" mnemonicParsing="false" text="Ver capa1" />
+            <CheckBox fx:id="ckCapa2" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" text="Ver capa2" />
+            <ChoiceBox fx:id="cbFrente" layoutX="11.0" layoutY="121.0" prefWidth="150.0" />
+            <Button layoutX="14.0" layoutY="160.0" mnemonicParsing="false" onAction="#onRepinta" text="Pinta" />
+            <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" text="Button" />
+            <Button layoutX="14.0" layoutY="240.0" mnemonicParsing="false" text="Button" />
+            <Slider fx:id="slider" layoutX="16.0" layoutY="285.0" max="1000.0" prefHeight="37.0" prefWidth="175.0" showTickLabels="true" showTickMarks="true" value="500.0" />
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="capa1" height="2000.0" width="2000.0" />
+            <Canvas fx:id="capa2" height="2000.0" width="2000.0" />
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,17 @@
+.default-color0.chart-area-symbol { -fx-background-color: aqua, navy; }
+.default-color1.chart-area-symbol { -fx-background-color: #f0e68c, #fffacd; }
+.default-color2.chart-area-symbol { -fx-background-color: #dda0dd, #d8bfd855; }
+ 
+.default-color0.chart-series-area-line, .default-color0.chart-series-line, .default-color0.chart-pie { -fx-stroke: aqua ; }
+.default-color1.chart-series-area-line { -fx-stroke: #f0e68c; }
+.default-color2.chart-series-area-line { -fx-stroke: #dda0dd; }
+ 
+.default-color0.chart-series-area-fill { -fx-fill: navy ; }
+.default-color1.chart-series-area-fill { -fx-fill: #fffacd55; }
+.default-color2.chart-series-area-fill { -fx-fill: #d8bfd855; }
+
+.default-color0.chart-bar {
+    -fx-background-color: navy ;
+    -fx-background-radius: 30;
+    -fx-border-color: aqua;
+}

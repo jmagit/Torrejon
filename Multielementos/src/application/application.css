@@ -1,0 +1,84 @@
+.BarraLateral {
+	-fx-background-color: rgb(165,216,254);
+}
+.root { rojo: #f00 }
+.aviso { -fx-background-color: rojo }
+
+#btnSaluda {
+	-fx-text-fill: yellow;
+	-fx-font-size: 2em;
+}
+.calculadora {
+	-fx-padding: 10px;
+	-fx-spacing: 5px;
+}
+
+.pantalla {
+	-fx-text-fill: yellow;
+	-fx-background-color: darkgreen;
+	-fx-font-size: 32px;
+	-fx-alignment: center-right;
+	-fx-label-padding: 3px;
+	-fx-border-radius: 5;
+	-fx-background-radius: 5;
+	-fx-effect: innershadow(one-pass-box , black , 8 , 0.2 , 2 , 2);
+}
+
+.panel-botones {
+	-fx-hgap: 3px;
+	-fx-vgap: 3px;
+}
+
+Button {
+	-fx-min-width: 40px;	
+	-fx-min-height: 40px;
+}
+
+.btnDigito {
+	-fx-text-fill: blue;
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+}
+
+.btnOperacion {
+	-fx-text-fill: red;
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+}
+.calculadora {
+	-fx-padding: 10px;
+	-fx-spacing: 5px;
+}
+
+.pantalla {
+	-fx-text-fill: yellow;
+	-fx-background-color: darkgreen;
+	-fx-font-size: 32px;
+	-fx-alignment: center-right;
+	-fx-label-padding: 3px;
+	-fx-border-radius: 5;
+	-fx-background-radius: 5;
+	-fx-effect: innershadow(one-pass-box , black , 8 , 0.2 , 2 , 2);
+}
+
+.panel-botones {
+	-fx-hgap: 3px;
+	-fx-vgap: 3px;
+}
+
+Button {
+	-fx-min-width: 40px;	
+	-fx-min-height: 40px;
+}
+
+.btnDigito {
+	-fx-text-fill: blue;
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+}
+
+.btnOperacion {
+	-fx-text-fill: red;
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+}
